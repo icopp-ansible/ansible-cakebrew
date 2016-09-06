@@ -1,0 +1,5 @@
+---
+- name: Install Cakebrew via Homebrew Cask
+  homebrew_cask:
+    name: cakebrew
+  when: ansible_os_family == "Darwin"
